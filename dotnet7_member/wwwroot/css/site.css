@@ -1,22 +1,92 @@
+@font-face {
+    font-family: "Prompt-Regular";
+    src: url(../lib/fonts/Prompt/Prompt-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Prompt-Thin";
+    src: url(../lib/fonts/Prompt/Prompt-Thin.ttf)
+}
+
+@font-face {
+    font-family: "Prompt-ExtraLight";
+    src: url(../lib/fonts/Prompt/Prompt-ExtraLight.ttf)
+}
+
+@font-face {
+    font-family: "Prompt-ExtraBold";
+    src: url(../lib/fonts/Prompt/Prompt-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Prompt-Light";
+    src: url(../lib/fonts/Prompt/Prompt-Light.ttf)
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: "Prompt-Light";
+    background-color: #F8F9F9;
+}
+
+span {
+    font-size: 12px;
+}
+
+.txt-accesdenied {
+    font-family: Prompt-Regular;
+    color: red;
+}
+
+h1.txt-accesdenied {
+    font-size: 100px;
+}
+
+h3.txt-accesdenied {
+    font-size: 50px;
+}
+
+span.txt-accesdenied {
+    font-size: 16px;
+}
+
+.card-login {
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-width: 372px;
+}
+
+.Login-Header {
+    margin-bottom: 50px;
+}
+
+.Register {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h6.title {
+    font-family: "Prompt-Regular";
+    margin: 0;
+}
+
+h5.card-title {
+    margin-bottom: 20px;
 }

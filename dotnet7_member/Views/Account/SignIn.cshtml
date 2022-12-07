@@ -1,0 +1,39 @@
+﻿@model dotnet7_member.Models.Accounts.AccountsModel.LoginRequest
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="card-login col-4" style="background-color:#fff">
+            <div class="row text-center Login-Header">
+                <h1 class="">ยินดีต้อนรับ</h1>
+                <h6 style="color:red;">@ViewBag.Msg</h6>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form asp-action="SubmitLogin" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Password" class="control-label"></label>
+                            <input asp-for="Password" class="form-control" type="password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="submit" class="btn btn-primary form-control" value="เข้าสู่ระบบ" />
+                        </div>
+                    </form>
+                    <div class="form-group mb-3" style="text-align:right;">
+                        <a class="Register">ลืมรหัสผ่าน?</a>
+                        <a asp-action="SignUp" class="Register">สมัครสมาชิก</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <span>workshop member system</span>
+            </div>
+        </div>
+    </div>
+</div>
